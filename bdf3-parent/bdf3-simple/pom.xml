@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>bdf3-parent</artifactId>
+        <groupId>com.bstek.bdf3</groupId>
+        <version>2.1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>bdf3-simple</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <!-- 添加 BDF3 提供的预定义依赖 Starter，BDF3 还提供了其他的 Starter -->
+        <dependency>
+            <groupId>com.bstek.bdf3</groupId>
+            <artifactId>bdf3-starter-multitenant</artifactId>
+        </dependency>
+
+        <!-- 开发测试工具 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- 数据库驱动，正式场景改为 mysql、oracle 等等数据库驱动 -->
+<!--        <dependency>-->
+<!--            <groupId>com.h2database</groupId>-->
+<!--            <artifactId>h2</artifactId>-->
+<!--        </dependency>-->
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+    </dependencies>
+    <!-- BDF3 提供的模块存放的 maven 私服仓库 -->
+    <repositories>
+        <repository>
+            <id>bsdn-maven-repository</id>
+            <url>http://nexus.bsdn.org/content/groups/public/</url>
+        </repository>
+    </repositories>
+</project>

@@ -29,6 +29,7 @@
 		<module>bdf3-notice</module>
 		<module>bdf3-notice-ui</module>
 		<module>bdf3-multitenant-ui</module>
+		<module>bdf3-simple</module>
 	</modules>
 	<properties>
 	</properties>
